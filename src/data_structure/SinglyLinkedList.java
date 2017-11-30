@@ -66,21 +66,23 @@ public class SinglyLinkedList<T> {
 	public static void main(String[] args) {
 		SinglyLinkedList<String> singlyLinkedList = new SinglyLinkedList<String>();
 		singlyLinkedList.add("Singh");
-		singlyLinkedList.add("ika");
-		singlyLinkedList.add("GV");
-		singlyLinkedList.add("batra");
-		System.out.println("Before delete");
+//		singlyLinkedList.add("ika");
+//		singlyLinkedList.add("GV");
+//		singlyLinkedList.add("batra");
+//		System.out.println("Before delete");
+		//singlyLinkedList.display();
+		//String str = "nya";
+		//singlyLinkedList.addAfter(str, "ika");
+		//System.out.println("after delete");
 		singlyLinkedList.display();
-		String str = "nya";
-		singlyLinkedList.addAfter(str, "ika");
-		System.out.println("after delete");
-		singlyLinkedList.display();
+		System.out.println(singlyLinkedList.head);
+		System.out.println(singlyLinkedList.head.next);
 		// singlyLinkedList.delete();
 		// System.out.println("after delete");
 		// singlyLinkedList.display();
-		singlyLinkedList.deleteAfter("GV");
-		System.out.println("After after delete");
-		singlyLinkedList.display();
+		//singlyLinkedList.deleteAfter("GV");
+		//System.out.println("After after delete");
+		//singlyLinkedList.display();
 	}
 
 }

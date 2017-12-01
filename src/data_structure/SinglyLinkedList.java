@@ -18,7 +18,7 @@ public class SinglyLinkedList<T> {
 	public SinglyLinkedList() {
 		this.head = null;
 	}
-	//method to add a node at starting
+	//add a node at starting
 	public void add(Object data) {
 		Node newNode = new Node(data, null);
 		if (head == null) {
@@ -29,7 +29,7 @@ public class SinglyLinkedList<T> {
 		}
 
 	}
-	//method to add node after a specific node
+	//add a node after a specific node
 	public void addAfter(Object element, Object after) {
 		Node newNode = new Node(element, null);
 		Node n = head;
@@ -40,7 +40,7 @@ public class SinglyLinkedList<T> {
 		newNode.next = n.next;
 		n.next = newNode;
 	}
-	
+	//delete a node after given input
 	public void deleteAfter(Object after) {
 		Node n = head;
 		while (n.next != null && n.data != after) {
@@ -49,12 +49,12 @@ public class SinglyLinkedList<T> {
 
 		n.next = n.next.next;
 	}
-
+	//delete a node from head
 	public void delete() {
 		Node n = head;
 		head = n.next;
 	}
-
+	// print the linked list 
 	public void display() {
 		Node n = head;
 		while (n != null) {

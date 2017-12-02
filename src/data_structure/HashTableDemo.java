@@ -1,4 +1,4 @@
-package data_structure.hash;
+package data_structure;
 
 public class HashTableDemo {
 

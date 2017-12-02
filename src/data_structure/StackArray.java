@@ -1,4 +1,4 @@
-package data_structure.stack;
+package data_structure;
 
 public class StackArray {
 	Object[] arrStack;

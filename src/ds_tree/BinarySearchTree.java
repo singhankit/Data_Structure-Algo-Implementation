@@ -26,11 +26,11 @@ public class BinarySearchTree {
 
 	public void search(int value, Node start){
 		if(start==null){
-			System.out.println("Node is not found !!");
+			System.out.println("\nNode is not found !!");
 			return;
 		}
 		if(start.value==value){
-			System.out.println("Node is Found");
+			System.out.println("\nNode is Found");
 			return;
 			
 		}

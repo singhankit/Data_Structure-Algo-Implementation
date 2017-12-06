@@ -1,16 +1,18 @@
-package ds.searching;
+package ds_searching;
 
-public class BinarySearch {
+public class InterpolationSearch {
+
 	public static void main(String[] args) {
 		DataSet item = new DataSet(1000000);
-		int search = 123451;
+		int search = 120023;
 		Boolean IsFound = false;
 		int low=0;
 		int high=item.getSize()-1;
 		int mid=0;
 		
 		while(!IsFound){
-			mid=low+((high-low)/2);
+			mid=low+((high-low)/(item.data[high]-
+					item.data[low]))*(search-item.data[low]);
 			if(low>high){
 				System.out.println("Number is not found.");
 				break;
@@ -28,5 +30,7 @@ public class BinarySearch {
 			}
 		}
 
+		
 	}
+
 }

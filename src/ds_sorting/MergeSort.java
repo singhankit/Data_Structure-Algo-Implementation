@@ -1,4 +1,4 @@
-package ds.sorting;
+package ds_sorting;
 
 public class MergeSort {
 

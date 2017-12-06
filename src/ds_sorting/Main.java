@@ -1,11 +1,11 @@
-package ds.sorting;
+package ds_sorting;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int []arr;
-		System.out.println(arr[0]);
+		//System.out.println(arr[0]);
 	}
 
 }

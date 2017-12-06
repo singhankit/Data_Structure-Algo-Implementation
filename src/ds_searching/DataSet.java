@@ -1,4 +1,4 @@
-package ds.searching;
+package ds_searching;
 
 public class DataSet {
 	int[] data;

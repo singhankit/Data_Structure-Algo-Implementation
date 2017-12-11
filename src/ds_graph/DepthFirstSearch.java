@@ -55,7 +55,6 @@ public class DepthFirstSearch {
 				
 	}
 	
-
 	public static void main(String[] args) {
 		DepthFirstSearch dfs=new DepthFirstSearch(6);
 		dfs.add(0,2);

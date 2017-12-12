@@ -20,10 +20,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String s = in.next();
-        String result = super_reduced_string(s);
-        System.out.println(result);
+    	for(int i=0,j=5;i<6 && j<8;i++,j++){
+    		System.out.println(i+"....."+j);
+    		
+    	}
+
     }
 }
 

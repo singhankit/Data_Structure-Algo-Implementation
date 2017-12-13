@@ -18,12 +18,20 @@ public class Solution {
         }str=str.replace("0","");
         return str.length()>0?str:"Empty String";
     }
-
+   
     public static void main(String[] args) {
-    	for(int i=0,j=5;i<6 && j<8;i++,j++){
-    		System.out.println(i+"....."+j);
-    		
-    	}
+//    	for(int i=0,j=5;i<6 || j<8;i++,j++){
+//    		System.out.println(i+"....."+j);
+//    		
+//    	}
+    	 HashMap<Integer,String> map=new HashMap<>();
+    	    map.put(1, "value");
+    	    map.put(null, "value3");
+    	    map.put(1, "value2");
+    	    
+    	    for(Map.Entry<Integer,String> entry:map.entrySet()){
+    	    	System.out.println(entry.getKey()+" ....."+entry.getValue());
+    	    }
 
     }
 }

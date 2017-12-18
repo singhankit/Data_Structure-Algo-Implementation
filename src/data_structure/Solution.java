@@ -4,35 +4,19 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+interface Poet {
+	default void write() 
+{ System.out.println("Poet's default method"); } }
+interface Writer extends Poet{
+	default void write2() {
+		System.out.println("Writer's default method"); } }
 
-public class Solution {
+	public class Solution implements  Writer{ 
+		public static void main(String args[]){
+			Solution john = new Solution();
+			john.write(); // which write method to call, from Poet // or, from Writer } }
+	}
 
-    static String super_reduced_string(String s){
-         String str=s;
-        for(int i=0;i<str.length();i++){
-            char c=str.charAt(i);
-           if(i+1 < str.length() && str.charAt(i+1)==c){
-                str=str.replaceFirst(""+c,"0");
-                str=str.replaceFirst(""+c,"0");
-            }
-        }str=str.replace("0","");
-        return str.length()>0?str:"Empty String";
-    }
-   
-    public static void main(String[] args) {
-//    	for(int i=0,j=5;i<6 || j<8;i++,j++){
-//    		System.out.println(i+"....."+j);
-//    		
-//    	}
-    	 HashMap<Integer,String> map=new HashMap<>();
-    	    map.put(1, "value");
-    	    map.put(null, "value3");
-    	    map.put(1, "value2");
-    	    
-    	    for(Map.Entry<Integer,String> entry:map.entrySet()){
-    	    	System.out.println(entry.getKey()+" ....."+entry.getValue());
-    	    }
+	}
 
-    }
-}
 
